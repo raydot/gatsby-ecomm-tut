@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Gatsby E-commerce Starter`,
+    description: `Working on gettin' started with Gatsby and Stripe.`,
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-stripe`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -32,3 +33,10 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+// module.exports = {
+//   siteMetadata: {
+//     title: "Gatsby E-Commerce Starter",
+//   },
+//   plugins: ["gatsby-plugin-react-helmet", "gatsby-plugin-stripe"],
+// }
