@@ -23,7 +23,7 @@ const Checkout = class extends React.Component {
     async redirectToCheckout(event) {
         event.preventDefault()
         const { error } = await this.stripe.redirectToCheckout({
-            items: [{ sku: "SKU_ABC-1223", quantity: 1}],
+            items: [{ sku: "sku_FYA19neWGTziTj", quantity: 1}],
             successUrl: `http://localhost:8000/page-2/` ,
             cancelUrl: `http://localhost:8000/`,
         })
